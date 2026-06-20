@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* 로고와 메뉴를 양끝으로 배치 */
+  align-items: center;            /* 세로 기준 중앙 정렬 */
+  padding: 20px;
+}
+
+.logo {
+  height: 40px;  /* 로고는 가로보다 '세로 높이'를 고정해야 깔끔합니다 */
+  width: auto;   /* 가로 비율은 자동으로 유지 */
+}

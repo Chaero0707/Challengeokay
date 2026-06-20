@@ -1,0 +1,138 @@
+/* 기본 초기화 및 배경 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe); /* 부드러운 그라데이션 배경 */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 자기소개 카드 상자 */
+.about-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+/* 프로필 헤더 */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    background-color: #dfe6e9;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.profile-name {
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 8px;
+}
+
+.profile-tagline {
+    font-size: 15px;
+    color: #0984e3;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* 상세 정보 스타일 */
+.profile-info {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    color: #b2bec3;
+    font-weight: bold;
+}
+
+.info-value {
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.info-value a {
+    color: #0984e3;
+    text-decoration: none;
+}
+
+/* 버튼 디자인 */
+.intro-btn {
+    background-color: #6c5ce7;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.intro-btn:hover {
+    background-color: #5b4cd8;
+    transform: translateY(-2px);
+}
+
+/* 💡 자바스크립트로 제어할 숨김/펼침 영역 스타일 */
+.hidden-intro {
+    max-height: 0; /* 처음에 높이를 0으로 숨김 */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* 부드럽게 열리는 애니메이션 효과 */
+}
+
+/* 자바스크립트가 이 클래스를 추가하면 열리게 됩니다 */
+.hidden-intro.show {
+    max-height: 500px; /* 열렸을 때의 최대 높이 */
+}
+
+.intro-content {
+    padding-top: 30px;
+    border-top: 1px solid #dfe6e9;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.intro-content h3 {
+    font-size: 18px;
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+.intro-content p {
+    font-size: 14px;
+    color: #636e72;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
